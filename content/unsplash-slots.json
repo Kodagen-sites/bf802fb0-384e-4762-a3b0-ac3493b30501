@@ -1,0 +1,22 @@
+[
+  { "slot": "section-hero", "keyword": "lagos street fashion editorial", "orientation": "landscape" },
+  { "slot": "section-about", "keyword": "african fashion designer studio", "orientation": "landscape" },
+  { "slot": "section-lookbook", "keyword": "streetwear model editorial", "orientation": "landscape" },
+  { "slot": "section-mockup", "keyword": "denim jacket flatlay editorial", "orientation": "landscape" },
+  { "slot": "section-drops", "keyword": "streetwear tshirt hanging rail", "orientation": "landscape" },
+  { "slot": "section-cta", "keyword": "african streetwear photography", "orientation": "landscape" },
+  { "slot": "service-streetwear-tees", "keyword": "streetwear graphic tshirt", "orientation": "landscape" },
+  { "slot": "service-dresses", "keyword": "african women dress fashion", "orientation": "landscape" },
+  { "slot": "service-denim-jackets", "keyword": "denim jacket urban style", "orientation": "landscape" },
+  { "slot": "service-accessories-caps", "keyword": "streetwear cap accessories", "orientation": "landscape" },
+  { "slot": "service-limited-drops", "keyword": "limited edition streetwear drop", "orientation": "landscape" },
+  { "slot": "service-thrift-finds", "keyword": "vintage thrift clothing rack", "orientation": "landscape" },
+  { "slot": "product-tee-1", "keyword": "black graphic tshirt streetwear", "orientation": "portrait" },
+  { "slot": "product-tee-2", "keyword": "white graphic tshirt model", "orientation": "portrait" },
+  { "slot": "product-dress-1", "keyword": "african print dress model", "orientation": "portrait" },
+  { "slot": "product-denim-1", "keyword": "oversized denim jacket portrait", "orientation": "portrait" },
+  { "slot": "product-cap-1", "keyword": "streetwear cap model", "orientation": "portrait" },
+  { "slot": "product-drop-1", "keyword": "limited streetwear collection", "orientation": "portrait" },
+  { "slot": "section-founder", "keyword": "nigerian creative studio portrait", "orientation": "landscape" },
+  { "slot": "section-og", "keyword": "lagos street fashion", "orientation": "landscape", "w": 1200, "h": 630 }
+]

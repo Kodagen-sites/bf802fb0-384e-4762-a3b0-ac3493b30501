@@ -1,0 +1,28 @@
+import { redirect } from "next/navigation";
+import { createServiceClient } from "@/lib/supabase/server";
+import { getCurrentSite } from "@/lib/site-scope";
+import { loadSiteConfigFromDB } from "@/lib/load-site-config";
+import { getSidebarCounts } from "@/lib/admin-counts";
+import ContentView from "./content-view";
+
+const SITE_SLUG = "lagos-grand-hotel";
+
+export default async function ContentPage() {
+  const ctx = await getCurrentSite();
+  if (!ctx) redirect("/admin/login");
+
+  const supabase = createServiceClient();
+  const [{ data }, siteConfig, counts] = await Promise.all([
+    supabase
+      .schema("kodagen")
+      .from("sites")
+      .select("config")
+      .eq("id", ctx.siteId)
+      .single(),
+    loadSiteConfigFromDB(SITE_SLUG),
+    getSidebarCounts(ctx.siteId),
+  ]);
+
+  const config = (data?.config ?? {}) as Record<string, unknown>;
+  return <ContentView siteName={ctx.site?.name ?? "your site"} config={config} siteConfig={siteConfig!} counts={counts} />;
+}

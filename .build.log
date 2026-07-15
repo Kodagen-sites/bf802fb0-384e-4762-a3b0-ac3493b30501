@@ -1,0 +1,93 @@
+
+> eko-threads@0.1.0 build
+> next build --debug-prerender
+
+⚠ Prerendering is running in debug mode with NODE_ENV='development'. This will affect performance and should not be used for production.
+▲ Next.js 16.2.10 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  ✓ allowDevelopmentBuild (enabled by `--debug-prerender`)
+  ⨯ prerenderEarlyExit (disabled by `--debug-prerender`)
+  ✓ serverSourceMaps (enabled by `--debug-prerender`)
+  ⨯ turbopackMinify (disabled by `--debug-prerender`)
+
+  Creating an optimized production build ...
+  Using external babel configuration from /workspace/babel.config.js
+(node:10059) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✓ Compiled successfully in 13.7s
+  Running TypeScript ...
+  Finished TypeScript in 10.7s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/54) ...
+  Generating static pages using 3 workers (13/54) 
+  Generating static pages using 3 workers (26/54) 
+  Generating static pages using 3 workers (40/54) 
+✓ Generating static pages using 3 workers (54/54) in 3.7s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /about
+├ ƒ /account
+├ ƒ /account/auth/callback
+├ ƒ /account/forgot-password
+├ ƒ /account/login
+├ ƒ /account/profile
+├ ƒ /account/reset-password
+├ ƒ /account/signup
+├ ƒ /account/suspended
+├ ƒ /admin
+├ ƒ /admin/auth/callback
+├ ƒ /admin/change-password
+├ ƒ /admin/content
+├ ƒ /admin/content/copy
+├ ƒ /admin/content/copy/[copy_key]
+├ ƒ /admin/content/hours
+├ ƒ /admin/content/locations
+├ ƒ /admin/content/pages
+├ ƒ /admin/content/settings
+├ ƒ /admin/content/social
+├ ƒ /admin/inquiries
+├ ƒ /admin/integrations
+├ ƒ /admin/journal
+├ ƒ /admin/login
+├ ƒ /admin/media
+├ ƒ /admin/reports
+├ ƒ /admin/settings
+├ ƒ /admin/subscribers
+├ ƒ /admin/team
+├ ƒ /admin/testimonials
+├ ƒ /admin/transactions
+├ ƒ /admin/users
+├ ƒ /admin/users/[user_id]
+├ ƒ /api/admin/notifications
+├ ƒ /api/auth/signout
+├ ƒ /api/inquiries
+├ ƒ /api/orders
+├ ƒ /api/payments/initialize
+├ ƒ /api/payments/providers
+├ ƒ /api/webhooks/paystack
+├ ƒ /api/webhooks/stripe
+├ ○ /checkout
+├ ƒ /contact
+├ ƒ /order-confirmation
+├ ƒ /privacy
+├ ○ /robots.txt
+├ ƒ /services
+├ ƒ /services/[slug]
+├ ƒ /shop
+├ ƒ /shop/[slug]
+├ ○ /sitemap.xml
+├ ƒ /terms
+└ ƒ /work
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
